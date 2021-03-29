@@ -13,5 +13,7 @@ This repo will be used for the first 10 labs or two business weeks of our 401-Ja
 [Basics directory](basics)
 -Main.java methods:
   -pluralize: turns a singular word into plural depending on integer.
+
   -flipNHeads: when you need to flip a coin but dont have any on you.
+  
   -clock: tells the current time in the console until you quit the program manually.

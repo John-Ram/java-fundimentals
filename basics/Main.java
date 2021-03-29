@@ -1,10 +1,8 @@
-import java.util.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
-
-public class main {
+  public class Main {
   public static void main(String[] args) {
     // pluralizing test
     int dogCount = 2;
@@ -53,16 +51,15 @@ public class main {
     LocalDateTime now;
     int prevSecond = LocalDateTime.now().getSecond();
 
-    while (true) {
-      now = LocalDateTime.now();
-      currentSecond = now.getSecond();
-      if (currentSecond == prevSecond) {
-        continue;
-      } else {
-        System.out.println(now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-        prevSecond = currentSecond;
-      }
-    }
+        do {
+          now = LocalDateTime.now();
+          currentSecond = now.getSecond();
+          if (currentSecond == prevSecond) {
+            continue;
+          } else {
+            System.out.println(now.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+            prevSecond = currentSecond;
+          }
+        } while (true);
   }
   }
-}
